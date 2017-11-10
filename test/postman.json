@@ -1,0 +1,68 @@
+{
+	"info": {
+		"name": "api",
+		"_postman_id": "04666029-74f3-2b13-c833-64abd1066b50",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"foo\",\n\t\"password\": \"bar\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/jwt/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jwt",
+						"login"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "authenticated hello",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTAzMzMxNDQsImlkIjoiZm9vIiwib3JpZ19pYXQiOjE1MTAzMzMwODR9.1EwUaH-Pa6dNxCL5w6AKbPlGLBZis6apXVu4pgTvt28",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/jwt/articles/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jwt",
+						"articles",
+						"hello"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
