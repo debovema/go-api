@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/debovema/go-api/handlers/content"
-	"github.com/debovema/go-api/handlers/middleware"
+	"./handlers/content"
+	"./handlers/middleware"
 	"os"
 	"io"
 )

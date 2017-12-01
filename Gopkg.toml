@@ -1,0 +1,9 @@
+required = ["github.com/gin-gonic/gin", "github.com/appleboy/gin-jwt"]
+
+[[constraint]]
+  name = "github.com/gin-gonic/gin"
+  version = "v1.2"
+  
+[[constraint]]
+  name = "github.com/appleboy/gin-jwt"
+  version = "v2.3.1"
