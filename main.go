@@ -1,11 +1,11 @@
 package main
 
 import (
+	"github.com/debovema/go-api/handlers/content"
+	"github.com/debovema/go-api/handlers/middleware"
 	"github.com/gin-gonic/gin"
-	"./handlers/content"
-	"./handlers/middleware"
-	"os"
 	"io"
+	"os"
 )
 
 func main() {
@@ -40,8 +40,8 @@ func main() {
 	r.Run()
 }
 
-func getAccounts() gin.Accounts  {
-	return map[string]string {
+func getAccounts() gin.Accounts {
+	return map[string]string{
 		"foo": "bar",
 	}
 }

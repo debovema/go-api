@@ -7,7 +7,7 @@ import (
 func ArticlesHandler() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		id := c.Param("id")
-		if (id == "") {
+		if id == "" {
 			c.JSON(200, gin.H{
 				"id": "No ID provided",
 			})
@@ -18,4 +18,3 @@ func ArticlesHandler() gin.HandlerFunc {
 		}
 	}
 }
-
